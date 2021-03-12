@@ -1,0 +1,21 @@
+[submodule "rg_speech_to_text"]
+	path = rg_speech_to_text
+	url = https://github.com/TheSoundOfAIOSR/rg_speech_to_text.git
+[submodule "rg_text_to_sound"]
+	path = rg_text_to_sound
+	url = https://github.com/TheSoundOfAIOSR/rg_text_to_sound.git
+[submodule "rg_sound_generation"]
+	path = rg_sound_generation
+	url = https://github.com/TheSoundOfAIOSR/rg_sound_generation.git
+[submodule "rg_production"]
+	path = rg_production
+	url = https://github.com/TheSoundOfAIOSR/rg_production.git
+[submodule "rg_music"]
+	path = rg_music
+	url = https://github.com/TheSoundOfAIOSR/rg_music.git
+[submodule "rg_evaluation"]
+	path = rg_evaluation
+	url = https://github.com/TheSoundOfAIOSR/rg_evaluation.git
+[submodule "rg_dataset"]
+	path = rg_dataset
+	url = https://github.com/TheSoundOfAIOSR/rg_dataset.git
