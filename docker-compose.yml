@@ -1,5 +1,16 @@
 version: "3.8"
 services:
+  jupyter:
+    container_name: jupyter
+    build:
+      context: ./jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - ${PWD}/jupyter/common:/home/jovyan/work/common
+      - ${PWD}/rg_sound_generation/mapping_models/examples:/home/jovyan/work/rg_snd_example
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
   mosquitto:
     image: eclipse-mosquitto
     ports:

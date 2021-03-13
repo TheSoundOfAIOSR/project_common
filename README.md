@@ -16,6 +16,7 @@ git submodule update --init --recursive
 start stop
 ```bash
 cd project_common
+docker-compose up jupyter
 docker-compose up -d
 docker-compose stop
 ```
