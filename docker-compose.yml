@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+      - "1884:1883"
+    volumes:
+      - ${PWD}/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+    restart: unless-stopped
+  webapps:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ${PWD}/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ${PWD}/example_path/public:/usr/share/nginx/html/example:ro
+    network_mode: "host"
