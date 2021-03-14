@@ -13,26 +13,28 @@ cd project_common
 git submodule update --init --recursive
 ```
 ## docker compose
-start stop
+start stop 
 ```bash
+alias dc=docker-compose
 cd project_common
-docker-compose up jupyter
-docker-compose up -d
-docker-compose stop
+dc up jupyter
+dc up -d
+dc stop jupyter
+dc build --force-rm jupyter
 ```
 other commands
 ```bash
-docker-compose -f up -d --remove-orphans
+dc -f up -d --remove-orphans
 
-docker-compose stop webapps
-docker-compose rm
-docker-compose up -d webapps
+dc stop webapps
+dc rm
+dc up -d webapps
 
-docker-compose logs webapps
-docker-compose up -d --build webapps
+dc logs webapps
+dc up -d --build webapps
 
-docker-compose ps
-docker-compose images
+dc ps
+dc images
 
 docker rmi nginx
 docker ps
