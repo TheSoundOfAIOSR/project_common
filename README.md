@@ -12,6 +12,12 @@ if already cloned without `--recurse-submodule`
 cd project_common
 git submodule update --init --recursive
 ```
+
+update
+```bash
+git pull --recurse-submodules
+```
+
 ## docker compose
 start stop 
 ```bash
