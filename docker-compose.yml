@@ -28,3 +28,9 @@ services:
       - ${PWD}/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ${PWD}/example_path/public:/usr/share/nginx/html/example:ro
     network_mode: "host"
+  evaluation:
+    container_name: evaluation
+    build:
+      context: ./rg_evaluation
+    ports:
+      - 5000:5000
