@@ -1,8 +1,8 @@
 # project_common
 Common environment for all groups to connect to other groups with a relative path
 
-# How To
-## git
+# Install
+## repo preparation
 ```bash
 git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
 ```
@@ -17,7 +17,25 @@ update
 ```bash
 git pull --recurse-submodules
 ```
+## install dependencies
+* if your default `python` version is matching the version 3.8
+```bash
+cd project_common
+setup.bat
+```
+* if your default `python` version is different then either change it or use `python3.8` if available
+```bash
+cd project_common
+setup3.8.bat
+```
 
+# Run
+```bash
+cd project_common
+run.bat
+```
+
+# Utils
 ## docker compose
 start stop 
 ```bash
