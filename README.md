@@ -23,7 +23,7 @@ git pull --recurse-submodules
 cd project_common
 setup.bat
 ```
-* if your default `python` version is different then either change it or use `python3.8` if available
+* if your default `python` version is different then either change it or use `python3.8` if available by calling the `setup3.8.bat` instead of `setup.bat`
 ```bash
 cd project_common
 setup3.8.bat
