@@ -9,4 +9,5 @@ cd rg_production
 python -m venv venv
 venv\Scripts\python -m pip install --upgrade pip setuptools
 venv\Scripts\python -m pip install -r requirements.txt
+venv\Scripts\garden.bat install knob
 cd ..
