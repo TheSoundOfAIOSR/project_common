@@ -1,2 +1,2 @@
-./rg_speech_to_text.sh
-./rg_production.sh
+./rg_speech_to_text/run.sh
+./rg_production/run.sh
