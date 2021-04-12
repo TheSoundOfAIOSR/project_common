@@ -1,0 +1,4 @@
+# Get the IP Address of the Windows 10 Host and use it in Environment.
+HOST_IP=$(host `hostname` | grep -oP '(\s)\d+(\.\d+){3}' | tail -1 | awk '{ print $NF }' | tr -d '\r')
+export DISPLAY=$HOST_IP:0.0
+export PULSE_SERVER=tcp:$HOST_IP
