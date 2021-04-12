@@ -1,5 +1,6 @@
 $wlsAppxFile = "ubuntu-setup\Ubuntu-20.04.appx"
 $rootfsDir = "ubuntu-setup\rootfs"
+$wslDestDir = "WSL"
 $rootfsArchive = "install.tar.gz"
 $rootfsFull = "$rootfsDir\$rootfsArchive"
 
@@ -16,8 +17,12 @@ if ((Test-Path $wlsAppxFile) -and !(Test-Path $rootfsFull)) {
     .\ubuntu-setup\7z\7za.exe e -r "$wlsAppxFile" "$rootfsArchive" -o"$rootfsDir" 
 }
 
+if (!(Test-Path $wslDestDir)) {
+    mkdir $wslDestDir
+}
+
 Write-Host "Importing rootfs from $rootfsFull and register MusicAI instance ..."
-wsl --import MusicAI WSL\MusicAI $rootfsFull
+wsl --import MusicAI "$wslDestDir\MusicAI" $rootfsFull
 
 # we cannot make sure that the .sh files below will always be commited from linux,
 # the windows end of line character is always replaced during injecting in bash
