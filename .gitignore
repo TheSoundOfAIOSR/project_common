@@ -1,3 +1,6 @@
 venv
 venv_stt
 venv_prod
+*.vhdx
+*.appx
+install.tar.gz
