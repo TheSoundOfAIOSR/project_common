@@ -1,8 +1,13 @@
-# project_common
-Common environment for all groups to connect to other groups with a relative path
+# Open Source Research Pipeline
+Common repository for The Sound of AI Open Source Research and instructions for running the end-to-end pipeline. Setups for OSX, Windows, and Linux (tbd) are listed here.
 
-# Install
-## repo preparation
+## Global Requirements
+Csound https://csound.com/download.html
+
+Python 3.8
+
+## First Step (All OS)
+
 ```bash
 git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
 ```
@@ -17,22 +22,24 @@ update
 ```bash
 git pull --recurse-submodules
 ```
-## install dependencies
-* if your default `python` version is matching the version 3.8
-```bash
-cd project_common
-setup.bat
+
+## Setup/Run - Windows
+Three out of four modules (STT, SG, Prod) run natively in python virtual environments. TTS requires linux, so the setup script creates a docker container.
 ```
-* if your default `python` version is different then either change it or use `python3.8` if available by calling the `setup3.8.bat` instead of `setup.bat`
-```bash
-cd project_common
-setup3.8.bat
+setup.bat
+run.bat
+rg_production\venv\Scripts\python main_rgws.py
 ```
 
-# Run
-```bash
-cd project_common
-run.bat
+## Setup/Run - Mac
+```
+bash setup_mac.sh
+bash run_mac.sh
+```
+
+## Setup/Run - Linux
+```
+TBD. Try the mac installation.
 ```
 
 # Utils
