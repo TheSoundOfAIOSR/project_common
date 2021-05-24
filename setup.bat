@@ -9,6 +9,7 @@ cd rg_sound_generation\sound_generator
 python -m venv venv
 venv\Scripts\python -m pip install --upgrade pip setuptools
 venv\Scripts\python -m pip install -r requirements.txt
+python sound_generator\download_checkpoints.py
 cd ..\..
 cd rg_production
 python -m venv venv

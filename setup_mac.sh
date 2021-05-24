@@ -14,7 +14,9 @@ cd rg_sound_generation
 python3 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
 venv/bin/python -m pip install -r sound_generator/requirements.txt
+python3 sound_generator/sound_generator/download_checkpoints.py
 cd ..
+brew install csound
 cd rg_production
 python3 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
