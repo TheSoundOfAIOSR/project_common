@@ -14,7 +14,7 @@ cd rg_sound_generation
 python3 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
 venv/bin/python -m pip install -r sound_generator/requirements.txt
-cd ../..
+cd ..
 cd rg_production
 python3 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
