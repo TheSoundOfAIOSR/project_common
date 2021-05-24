@@ -9,10 +9,12 @@ cd rg_sound_generation\sound_generator
 python -m venv venv
 venv\Scripts\python -m pip install --upgrade pip setuptools
 venv\Scripts\python -m pip install -r requirements.txt
+python sound_generator\download_checkpoints.py
 cd ..\..
 cd rg_production
 python -m venv venv
 venv\Scripts\python -m pip install --upgrade pip setuptools
 venv\Scripts\python -m pip install -r requirements.txt
 cd ..
-docker build -t tts_image .
+cd rg_text_to_sound
+bash -c "python3 -m venv venv; source venv/bin/activate; pip install --upgrade pip setuptools; pip install rgws; pip install git+https://git@github.com/TheSoundOfAIOSR/rg_text_to_sound.git#'subdirectory=tts_pipeline';"

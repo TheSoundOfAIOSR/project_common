@@ -4,6 +4,8 @@ Common repository for The Sound of AI Open Source Research and instructions for 
 ## Global Requirements
 Csound https://csound.com/download.html
 
+On MacOs, if homebrew is installed, the setup script will install Csound automatically.
+
 Python 3.8
 
 ## First Step (All OS)
