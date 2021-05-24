@@ -4,4 +4,5 @@ cd ..
 cd rg_sound_generation\sound_generator
 start venv\Scripts\python main_rgws.py
 cd ../..
-start docker run --name tts_image -ti --rm tts_image
+cd rg_text_to_sound
+bash -c "source venv/bin/activate; cd tts_websocketserver/src; python -m tts_websocketserver.tts_server"
