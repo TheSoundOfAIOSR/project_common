@@ -30,7 +30,7 @@ Three out of four modules (STT, SG, Prod) run natively in python virtual environ
 ```
 setup.bat
 run.bat
-rg_production\venv\Scripts\python main_rgws.py
+rg_production\venv\Scripts\python main.py
 ```
 
 ## Setup/Run - Mac
