@@ -28,7 +28,6 @@ cd ..
 echo "4/4 Installing Text to sound"
 cd rg_text_to_sound
 python3.8 -m venv venv
-venv\Scripts\pip install --upgrade pip setuptools
-venv\Scripts\pip pip install rgws
-venv\Scripts\pip install git+https://git@github.com/TheSoundOfAIOSR/rg_text_to_sound.git#'subdirectory=tts_pipeline'
+venv\Scripts\python -m pip install rgws
+venv\Scripts\python -m pip install -r tts_pipeline\requirements\prod.txt
 cd ..
