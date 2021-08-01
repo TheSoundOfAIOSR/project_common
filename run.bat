@@ -1,7 +1,7 @@
 cd rg_speech_to_text
 start venv\Scripts\python TheSoundOfAIOSR\stt\interface\server_app.py
 cd ..
-cd rg_sound_generation\sound_generator
+cd rg_sound_generation\timbre_conditioned_vae
 start venv\Scripts\python main_rgws.py
 cd ..\..
 cd rg_text_to_sound/tts_websocketserver/src
