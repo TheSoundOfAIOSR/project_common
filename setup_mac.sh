@@ -13,11 +13,10 @@ venv/bin/python -m pip install rgws
 venv/bin/python -m pip install git+https://github.com/TheSoundOfAIOSR/rg_text_to_sound.git\#"subdirectory=tts_pipeline"
 cd ..
 echo "3/4 Installing Sound Generation"
-cd rg_sound_generation
+cd rg_sound_generation\timbre_conditioned_vae
 python3.8 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
-venv/bin/python -m pip install -r sound_generator/requirements.txt
-python3 sound_generator/sound_generator/download_checkpoints.py
+venv/bin/python -m pip install -r requirements.txt
 cd ..
 echo "4/4 Installing Production"
 brew install csound
