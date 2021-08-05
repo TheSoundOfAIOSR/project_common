@@ -16,8 +16,7 @@ echo "3/4 Installing Sound Generation"
 cd rg_sound_generation
 python3.8 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
-venv/bin/python -m pip install -r sound_generator/requirements.txt
-python3 sound_generator/sound_generator/download_checkpoints.py
+venv/bin/python -m pip install -r ./timbre_conditioned_vae/requirements.txt
 cd ..
 echo "4/4 Installing Production"
 brew install csound

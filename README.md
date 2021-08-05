@@ -1,47 +1,50 @@
-# Open Source Research Pipeline
-Common repository for The Sound of AI Open Source Research and instructions for running the end-to-end pipeline. Setups for OSX, Windows, and Linux (tbd) are listed here.
+Common repository for The Sound of AI Open Source Research and instructions for running the end-to-end pipeline.
 
-## Global Requirements
-Csound https://csound.com/download.html
+# Dependencies
+## Csound
+* Csound https://csound.com/
+* latest version should run, tested version in this project is `6.16.2`
+* https://github.com/csound/csound/releases/tag/6.16.2
+* install .exe 
+* or unzip .zip version in a folder that is added to the system path
 
 On MacOs, if homebrew is installed, the setup script will install Csound automatically.
 
-Python 3.8
+## Python
+* Python version 3.8 is to be used
+* in case python 3.8 available on the system but not the default one then use `setup3.8.bat` instead of `setup.bat`
 
-## First Step (All OS)
+# Setup and Run
+⚠️ `setup` may take several minutes
+## windows
+Three out of four modules (STT, SG, Prod) run natively in python virtual environments. TTS requires linux, so the setup script creates a docker container.
 
-```bash
-git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
 ```
+git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
+cd project_common
+setup.bat
+run.bat
+rg_production\venv\Scripts\python rg_production\main.py
+```
+
+## Mac
+```
+git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
+cd project_common
+bash setup_mac.sh
+bash run_mac.sh
+```
+
+## update
 
 if already cloned without `--recurse-submodule`
 ```bash
 cd project_common
 git submodule update --init --recursive
 ```
-
-update
+further updates
 ```bash
 git pull --recurse-submodules
-```
-
-## Setup/Run - Windows
-Three out of four modules (STT, SG, Prod) run natively in python virtual environments. TTS requires linux, so the setup script creates a docker container.
-```
-setup.bat
-run.bat
-rg_production\venv\Scripts\python main.py
-```
-
-## Setup/Run - Mac
-```
-bash setup_mac.sh
-bash run_mac.sh
-```
-
-## Setup/Run - Linux
-```
-TBD. Try the mac installation.
 ```
 
 # Utils
