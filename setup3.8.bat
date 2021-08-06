@@ -11,12 +11,12 @@ venv\Scripts\python -m pip install sounddevice
 venv\Scripts\python -m pip install -r requirements.txt
 cd ..
 echo "2/4 Installing Sound Generation"
-cd rg_sound_generation\timbre_conditioned_vae
+cd rg_sound_generation
 python3.8 -m venv venv
 venv\Scripts\python -m pip install --upgrade pip setuptools
 venv\Scripts\python -m pip install -r requirements.txt
 rem venv\Scripts\garden.bat install knob
-cd ..\..
+cd ..
 echo "3/4 Installing Production"
 cd rg_production
 python3.8 -m venv venv
