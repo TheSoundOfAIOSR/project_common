@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_dataset" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_evaluation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_music" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_production" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_sound_generation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_speech_to_text" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_speech_to_text/wsl2_setup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rg_text_to_sound" vcs="Git" />
+  </component>
+</project>
