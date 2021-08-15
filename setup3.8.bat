@@ -6,6 +6,7 @@ venv\Scripts\python -m pip install --upgrade pip setuptools
 venv\Scripts\python -m pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 venv\Scripts\python -m pip install sounddevice
 venv\Scripts\python -m pip install pipwin
+venv\Scripts\pipwin refresh
 venv\Scripts\pipwin install pyaudio
 venv\Scripts\python -m pip install sounddevice
 venv\Scripts\python -m pip install -r requirements.txt
