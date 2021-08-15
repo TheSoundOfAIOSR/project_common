@@ -26,6 +26,6 @@ cd ..
 echo "4/4 Installing Text to sound"
 cd rg_text_to_sound
 python3.8 -m venv venv
-venv\Scripts\python -m pip install rgws
-venv\Scripts\python -m pip install -r tts_pipeline\requirements\prod.txt
+venv\Scripts\python -m pip install --upgrade pip setuptools
+venv\Scripts\python -m pip install -r tts_pipeline/requirements/prod.txt
 cd ..
