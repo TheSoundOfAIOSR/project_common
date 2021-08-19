@@ -9,11 +9,13 @@ echo "2/4 Installing Text to sound"
 cd rg_text_to_sound
 python3.8 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
-venv/bin/python -m pip install rgws
-venv/bin/python -m pip install git+https://github.com/TheSoundOfAIOSR/rg_text_to_sound.git\#"subdirectory=tts_pipeline"
+venv/bin/python -m pip install -r tts_websocketserver/requirements.txt
+cd tts_websocketserver/src
+../../venv/bin/python -m tts_websocketserver.initialize
+cd ../..
 cd ..
 echo "3/4 Installing Sound Generation"
-cd rg_sound_generation
+cd ./rg_sound_generation
 python3.8 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
 venv/bin/python -m pip install -r requirements.txt
