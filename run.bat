@@ -7,3 +7,4 @@ cd ..
 cd rg_text_to_sound
 start venv\Scripts\python main_tts.py
 cd ..
+
