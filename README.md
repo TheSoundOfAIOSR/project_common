@@ -26,7 +26,6 @@ git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common
 cd project_common
 setup.bat
 run.bat
-rg_production\venv\Scripts\python rg_production\main.py
 ```
 
 ### Mac
