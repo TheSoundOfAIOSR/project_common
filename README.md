@@ -1,7 +1,8 @@
 Common repository for The Sound of AI Open Source Research Project.
 
 # Main app
-The main app allows to run the end-to-end pipeline that launches services in the background and provides the user with a GUI App.
+This main app provides scripts to install and run the end-to-end pipeline. This includes Speech-to-Text, Text-to-Sound, and Sound Generation services, as well as the sampler/playback tool.
+
 ## Dependencies
 ### Csound
 * Csound https://csound.com/
@@ -17,10 +18,10 @@ On MacOs, if homebrew is installed, the setup script will install Csound automat
 * in case python 3.8 available on the system but not the default one then use `setup3.8.bat` instead of `setup.bat`
 
 ## Setup and Run
-⚠️ `setup` may take several minutes
-### windows
-Three out of four modules (STT, SG, Prod) run natively in python virtual environments. TTS requires linux, so the setup script creates a docker container.
+Each service requires its own virtual python environment which is created during the setup. 
+⚠️ This may take several minutes.
 
+### windows
 ```
 git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
 cd project_common
