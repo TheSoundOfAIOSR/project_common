@@ -8,5 +8,5 @@ cd rg_text_to_sound
 start venv\Scripts\python main_tts.py
 cd ..
 cd rg_production
-start venv\Scripts\python rg_production\main.py
+start venv\Scripts\python main.py
 cd ..
