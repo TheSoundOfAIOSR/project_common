@@ -21,6 +21,8 @@ On MacOs, if homebrew is installed, the setup script will install Csound automat
 Each service requires its own virtual python environment which is created during the setup. 
 ⚠️ This may take several minutes.
 
+A manual that describes the UI functionalities and how to use the app is available at https://github.com/TheSoundOfAIOSR/rg_production/blob/main/Manual.md
+
 ### windows
 ```
 git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
