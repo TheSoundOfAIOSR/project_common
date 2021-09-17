@@ -3,6 +3,9 @@ Common repository for The Sound of AI Open Source Research Project.
 # Main app
 This main app provides scripts to install and run the end-to-end pipeline. This includes Speech-to-Text, Text-to-Sound, and Sound Generation services, as well as the sampler/playback tool.
 
+## Usage Manual
+A [manual](https://github.com/TheSoundOfAIOSR/rg_production/blob/main/Manual.md) that describes the UI functionalities and how to use the app is available at https://github.com/TheSoundOfAIOSR/rg_production/blob/main/Manual.md
+
 ## Dependencies
 ### Csound
 * Csound https://csound.com/
@@ -19,9 +22,10 @@ On MacOs, if homebrew is installed, the setup script will install Csound automat
 
 ## Setup and Run
 Each service requires its own virtual python environment which is created during the setup. 
-⚠️ This may take several minutes.
 
-A manual that describes the UI functionalities and how to use the app is available at https://github.com/TheSoundOfAIOSR/rg_production/blob/main/Manual.md
+⚠️ Only a single repo setup supported per system due to installs in global temp directory. e.g. pm windows `C:\Users\User\AppData\Local\Temp\`
+
+⚠️ The install may take several minutes.
 
 ### windows
 ```
