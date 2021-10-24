@@ -43,6 +43,14 @@ bash setup_mac.sh
 bash run_mac.sh
 ```
 
+### Linux
+```
+git clone --recurse-submodules https://github.com/TheSoundOfAIOSR/project_common.git
+cd project_common
+bash setup_linux.sh
+bash run.sh
+```
+
 ### update
 
 if already cloned without `--recurse-submodule`
