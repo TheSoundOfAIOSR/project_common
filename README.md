@@ -6,7 +6,7 @@ This main app provides scripts to install and run the end-to-end pipeline. This 
 ## Usage and Manual
 A [manual](https://github.com/TheSoundOfAIOSR/rg_production/blob/main/Manual.md) that describes the UI functionalities and how to use the app is available at https://github.com/TheSoundOfAIOSR/rg_production/blob/main/Manual.md
 
-If you encounter any issues running or installing the app, please check if there is a [Github issue](https://github.com/TheSoundOfAIOSR/project_common/issues) already open for it or open a new issue and get in touch with us for troubleshooting tips.
+If you encounter any issues running or installing the app, please check if there is a [Github issue](https://github.com/TheSoundOfAIOSR/project_common/issues=) already open for it or open a new issue and get in touch with us for troubleshooting tips.
 
 ## Dependencies
 ### Csound
