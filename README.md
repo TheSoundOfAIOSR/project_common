@@ -25,7 +25,7 @@ On MacOs, if homebrew is installed, the setup script will install Csound automat
 ## Setup and Run
 Each service requires its own virtual python environment which is created during the setup. 
 
-⚠️ Only a single repo setup supported per system due to installs in global temp directory. e.g. pm windows `C:\Users\User\AppData\Local\Temp\`
+⚠️ Only a single repo setup supported per system due to installs in global temp directory. e.g. pm windows `C:\Users\User\AppData\Local\Temp\`. As a workaround it is possible to delete the directory `C:\Users\User\AppData\Local\Temp\tfhub_modules` before running the setup.
 
 ⚠️ The install may take several minutes.
 
