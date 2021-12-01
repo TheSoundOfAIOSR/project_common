@@ -51,6 +51,7 @@ cd project_common
 bash setup_mac.sh
 bash run_mac.sh
 ```
+If python3.8 is linked as `python3.8` rather than `python3`, please run `setup_mac38.sh` instead.
 
 ### Linux
 ```
