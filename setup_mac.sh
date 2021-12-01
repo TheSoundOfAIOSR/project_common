@@ -1,5 +1,6 @@
 python3 utils/check_version.py || exit
 echo "1/4 Installing Speech to text"
+brew install portaudio
 cd rg_speech_to_text
 python3 -m venv venv
 venv/bin/python -m pip install --upgrade pip setuptools
