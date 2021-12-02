@@ -18,6 +18,13 @@ If you encounter any issues running or installing the app, please check if there
 
 On MacOs, if homebrew is installed, the setup script will install Csound automatically.
 
+### Portaudio
+* Portaudio http://portaudio.com/
+
+On Windows the setup script will install Portaudio.
+On MacOs, if homebrew is installed, the setup script will install Portaudio automatically.
+
+
 ### Python
 * Python version 3.8 is to be used
 * in case python 3.8 available on the system but not the default one then use `setup3.8.bat` instead of `setup.bat`
@@ -44,6 +51,7 @@ cd project_common
 bash setup_mac.sh
 bash run_mac.sh
 ```
+If python3.8 is linked as `python3.8` rather than `python3`, please run `setup_mac38.sh` instead.
 
 ### Linux
 ```
